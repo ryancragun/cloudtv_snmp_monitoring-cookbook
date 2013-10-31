@@ -12,5 +12,5 @@ supports "centos"
 depends "rightscale"
 
 recipe "cloudtv_snmp_monitoring::default", "default recipe"
-recipe "cloudtv_snmp_monitorign::install_cloudtv_plugin", "Installs SNMP monitoring for CloudTV"
-recipe "cloudtv_snmp_monitorign::install_transcoder_plugin", "Installs SNMP monitoring for CloudTV Transcoder"
+recipe "cloudtv_snmp_monitoring::install_cloudtv_plugin", "Installs SNMP monitoring for CloudTV"
+recipe "cloudtv_snmp_monitoring::install_transcoder_plugin", "Installs SNMP monitoring for CloudTV Transcoder"
