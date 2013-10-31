@@ -20,7 +20,7 @@ rightscale_marker
 
 require 'fileutils'
 
-log "   Installing cloudtv_snmp_monitoring.."
+log "   Installing CloudTV SNMP Monitoring.."
 
 case node[:platform]
 when 'centos'
@@ -54,4 +54,4 @@ directory node[:rightscale][:collectd_lib] do
   recursive true
 end
 
-log "   Installed collectd cloudtv_snmtp_monitoring."
+log "   CloudTV SNMP Monitoring installed!"

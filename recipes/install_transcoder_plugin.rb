@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: cloudtv_snmp_monitoring
-# Recipe:: install_cloudtv_plugin
+# Recipe:: install_transcoder_plugin
 #
 # Copyright (C) 2013 Ryan Cragun
 #
@@ -20,9 +20,9 @@ rightscale_marker
 
 require 'fileutils'
 
-log "   Installing cloudtv_snmp_monitoring.."
+log "   Installing CloudTV SNMP Transcoder Monitoring.."
 
-case node['platform']
+case node[:platform]
 when 'centos'
   packages = %w(collectd collectd-snmp)
 when 'ubuntu'
@@ -54,4 +54,4 @@ directory node[:rightscale][:collectd_lib] do
   recursive true
 end
 
-log "   Installed collectd cloudtv_snmtp_monitoring."
+log "   CloudTV SNMP Transcoder Monitoring installed!"
