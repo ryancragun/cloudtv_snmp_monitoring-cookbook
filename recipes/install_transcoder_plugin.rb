@@ -36,6 +36,7 @@ service "collectd"
 file(::File.join(node[:rightscale][:collectd_plugin_dir], "snmp.conf")) do
   only_if { ::File.exists?(::File.join(node[:rightscale][:collectd_plugin_dir], "snmp.conf")) }
   action :delete
+  backup false
 end
 
 template(::File.join(node[:rightscale][:collectd_plugin_dir], "cloudtv_transcoder_snmp.conf")) do
