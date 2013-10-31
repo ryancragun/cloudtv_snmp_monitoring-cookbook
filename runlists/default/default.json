@@ -1,0 +1,7 @@
+{
+  "run_list": [
+    "recipe[rightscale::default]",
+    "recipe[cloudtv_snmp_monitoring::install_cloudtv_plugin]",
+    "recipe[cloudtv_snmp_monitoring::install_transcoder_plugin]"
+  ]
+}
